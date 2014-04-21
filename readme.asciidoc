@@ -1,7 +1,7 @@
 = Bukkit Plugin Archetype
 
 This is an archetype for creating a Bukkit Plugin. Bukkit Plugins can
-be used to mod Minecraft.
+be used to create minecraft mods.
 
 == Install the Archetype
 
@@ -9,14 +9,13 @@ Clone workspace, build and install archetype
 
 [source,txt]
 ----
-git clone https://github.com/arun-gupta/bukkit-workshop.git
-cd archetype
+git clone https://github.com/arun-gupta/bukkit-archetype.git
 mvn install
 ----
 
 == Usage
 
-Make sure this command is not executed from the `archetype` directory. So
+Make sure this command is executed from a different directory. So
 change directory one level up using the command `cd ..` and create a new plugin as:
 
 [source,text]
