@@ -1,0 +1,27 @@
+= Bukkit Plugin Archetype
+
+This is an archetype for creating a Bukkit Plugin. Bukkit Plugins can
+be used to mod Minecraft.
+
+== Install the Archetype
+
+Clone workspace, build and install archetype
+
+[source,txt]
+----
+git clone https://github.com/arun-gupta/bukkit-workshop.git
+cd archetype
+mvn install
+----
+
+== Usage
+
+Make sure this command is not executed from the `archetype` directory. So
+change directory one level up using the command `cd ..` and create a new plugin as:
+
+[source,text]
+----
+mvn --batch-mode archetype:generate -DarchetypeGroupId=org.devoxx4kids.bukkit.plugins -DarchetypeArtifactId=bukkit-template -DartifactId=sample
+----
+
+Make sure to change ``sample'' to your plugin name.
