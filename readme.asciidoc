@@ -3,7 +3,18 @@
 This is an archetype for creating a Bukkit Plugin. Bukkit Plugins can
 be used to create minecraft mods.
 
-== Install the Archetype
+== Usage
+
+Create a new sample plugin as:
+
+[source,text]
+----
+mvn --batch-mode archetype:generate -DarchetypeGroupId=org.devoxx4kids.bukkit.plugins -DarchetypeArtifactId=bukkit-template -DartifactId=sample
+----
+
+Make sure to change ``sample'' in the command to your plugin name.
+
+== Install the Archetype (only if asked)
 
 Clone workspace, build and install archetype
 
@@ -13,14 +24,3 @@ git clone https://github.com/arun-gupta/bukkit-archetype.git
 mvn install
 ----
 
-== Usage
-
-Make sure this command is executed from a different directory. So
-change directory one level up using the command `cd ..` and create a new plugin as:
-
-[source,text]
-----
-mvn --batch-mode archetype:generate -DarchetypeGroupId=org.devoxx4kids.bukkit.plugins -DarchetypeArtifactId=bukkit-template -DartifactId=sample
-----
-
-Make sure to change ``sample'' to your plugin name.
