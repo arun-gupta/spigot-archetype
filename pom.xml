@@ -10,7 +10,7 @@
 
     <groupId>org.devoxx4kids.bukkit.plugins</groupId>
     <artifactId>bukkit-template</artifactId>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.2</version>
     <packaging>maven-archetype</packaging>
 
     <name>bukkit-template</name>
