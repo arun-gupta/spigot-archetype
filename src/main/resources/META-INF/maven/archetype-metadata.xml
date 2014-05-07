@@ -10,9 +10,7 @@
         <requiredProperty key="version">
             <defaultValue>1.0-SNAPSHOT</defaultValue>
         </requiredProperty>
-        <requiredProperty key="package">
-            <defaultValue>org.devoxx4kids.bukkit.plugins.sample</defaultValue>
-        </requiredProperty>
+        <requiredProperty key="bukkit"/>
     </requiredProperties>
     <fileSets>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
