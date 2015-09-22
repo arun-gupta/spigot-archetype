@@ -1,7 +1,6 @@
-= Bukkit Plugin Archetype
+= Spigot or Bukkit Plugin Archetype
 
-This is an archetype for creating a Bukkit Plugin. Bukkit Plugins can
-be used to create minecraft mods.
+This is an archetype for creating a Spigot or Bukkit Plugin. These plugins can be used to create Minecraft Mods.
 
 == Usage
 
@@ -14,7 +13,7 @@ mvn --batch-mode archetype:generate -DarchetypeGroupId=org.devoxx4kids.bukkit.pl
 
 Make sure to change ``sample'' in the command to your plugin name.
 
-== Install the Archetype (only if asked)
+== Install the Archetype (only if needed)
 
 Clone workspace, build and install archetype
 
