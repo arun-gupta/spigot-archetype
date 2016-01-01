@@ -8,7 +8,7 @@ Create a new sample plugin as:
 
 [source,text]
 ----
-mvn --batch-mode archetype:generate -DarchetypeGroupId=org.devoxx4kids.bukkit.plugins -DarchetypeArtifactId=bukkit-template -DartifactId=sample
+mvn --batch-mode archetype:generate -DarchetypeGroupId=org.devoxx4kids.spigot.plugins -DarchetypeArtifactId=spigot-template -DartifactId=sample -Dspigot=/Users/arungupta/tools/spigot
 ----
 
 Make sure to change ``sample'' in the command to your plugin name.
@@ -19,7 +19,7 @@ Clone workspace, build and install archetype
 
 [source,txt]
 ----
-git clone https://github.com/arun-gupta/bukkit-archetype.git
+git clone https://github.com/arun-gupta/spigot-archetype.git
 mvn install
 ----
 
