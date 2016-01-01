@@ -6,20 +6,34 @@ This is an archetype for creating a Spigot or Bukkit Plugin. These plugins can b
 
 Create a new sample plugin as:
 
-[source,text]
-----
+```console
 mvn --batch-mode archetype:generate -DarchetypeGroupId=org.devoxx4kids.spigot.plugins -DarchetypeArtifactId=spigot-template -DartifactId=sample -Dspigot=/Users/arungupta/tools/spigot
-----
+```
 
-Make sure to change ``sample'' in the command to your plugin name.
+Two property value names need to be changed:
+. Change the value of "`sample`" to your plugin name.
+. Change the value of "`spigot`" to the directory where Spigot is installed.
 
-== Install the Archetype (only if needed)
+== Install the Archetype (only if asked)
+
+=== Locally
 
 Clone workspace, build and install archetype
 
-[source,txt]
-----
+```console
 git clone https://github.com/arun-gupta/spigot-archetype.git
 mvn install
-----
+```
+
+== Maven Central
+
+=== Deploy Snapshots
+
+```console
+mvn deploy
+```
+
+=== Deploy Release
+
+TBD
 
