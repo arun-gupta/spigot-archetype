@@ -7,7 +7,7 @@ This is an archetype for creating a Spigot or Bukkit Plugin. These plugins can b
 Create a new sample plugin as:
 
 ```console
-mvn --batch-mode archetype:generate -DarchetypeGroupId=org.devoxx4kids.spigot.plugins -DarchetypeArtifactId=spigot-template -DartifactId=sample -Dspigot=/Users/arungupta/tools/spigot
+mvn --batch-mode archetype:generate -DarchetypeGroupId=org.devoxx4kids.spigot.plugins -DarchetypeArtifactId=spigot-template -DarchetypeVersion=0.2-SNAPSHOT -DarchetypeRepository=https://oss.sonatype.org/content/repositories/snapshots -DartifactId=sample -Dspigot=/Users/arungupta/tools/spigot 
 ```
 
 Two property value names need to be changed:
