@@ -2,33 +2,34 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
   
-    <!--    <parent>
-        <groupId>org.sonatype.oss</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>9</version>
-    </parent>-->
-
     <groupId>org.devoxx4kids.spigot.plugins</groupId>
     <artifactId>spigot-template</artifactId>
     <version>0.2-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
-
-    <name>spigot-template</name>
+    <name>Spigot Plugin for Devoxx4Kids Workshops</name>
     <description>Spigot Template Plugin</description>
     <url>https://github.com/arun-gupta/spigot-archetype</url>
-    <licenses />
-    <scm>
-        <connection>scm:git:git@github.com:arun-gupta/spigot-archetype.git</connection>
-        <developerConnection>scm:git:git@github.com:arun-gupta/spigot-archetype.git</developerConnection>
-        <url>https://github.com/arun-gupta/spigot-archetype.git</url>
-      <tag>HEAD</tag>
-  </scm>
+    
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
     <developers>
         <developer>
             <name>Arun Gupta</name>
             <email>arun.gupta@gmail.com</email>
         </developer>
     </developers>
+    <scm>
+        <connection>scm:git:git@github.com:arun-gupta/spigot-archetype.git</connection>
+        <developerConnection>scm:git:git@github.com:arun-gupta/spigot-archetype.git</developerConnection>
+        <url>https://github.com/arun-gupta/spigot-archetype.git</url>
+        <tag>HEAD</tag>
+    </scm>
     
     <distributionManagement>
         <snapshotRepository>
@@ -63,7 +64,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5</version>
+                <version>2.5.3</version>
                 <configuration>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <useReleaseProfile>false</useReleaseProfile>
