@@ -10,6 +10,9 @@
         <requiredProperty key="version">
             <defaultValue>1.0-SNAPSHOT</defaultValue>
         </requiredProperty>
+        <requiredProperty key="pluginApp">
+            <defaultValue>${artifactId.substring(0,1).toUpperCase()}${artifactId.substring(1)}</defaultValue>
+        </requiredProperty>
         <requiredProperty key="spigot"/>
     </requiredProperties>
     <fileSets>
