@@ -2,14 +2,6 @@
 
 This is an archetype for creating a Spigot or Bukkit Plugin. These plugins can be used to create Minecraft Mods.
 
-== Maven coordinates
-
-```XML
-<groupId>org.devoxx4kids.spigot.plugins</groupId>
-<artifactId>spigot-template</artifactId>
-<version>0.2</version>
-```
-
 == Usage
 
 Create a new sample plugin as:
@@ -19,12 +11,11 @@ mvn --batch-mode archetype:generate -DarchetypeGroupId=org.devoxx4kids.spigot.pl
 ```
 
 Two property value names need to be changed:
+
 . Change the value of "`sample`" to your plugin name.
 . Change the value of "`spigot`" to the directory where Spigot is installed.
 
-== Install the Archetype (only if asked)
-
-=== Locally
+== Install the Archetype Locally (only if asked)
 
 Clone workspace, build and install archetype
 
@@ -33,7 +24,7 @@ git clone https://github.com/arun-gupta/spigot-archetype.git
 mvn install
 ```
 
-== Deploy to Maven Central
+== Deploy to Maven Central (only for administrator)
 
 === Snapshots
 
