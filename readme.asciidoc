@@ -2,12 +2,20 @@
 
 This is an archetype for creating a Spigot or Bukkit Plugin. These plugins can be used to create Minecraft Mods.
 
+== Maven coordinates
+
+```XML
+<groupId>org.devoxx4kids.spigot.plugins</groupId>
+<artifactId>spigot-template</artifactId>
+<version>0.2</version>
+```
+
 == Usage
 
 Create a new sample plugin as:
 
 ```console
-mvn --batch-mode archetype:generate -DarchetypeGroupId=org.devoxx4kids.spigot.plugins -DarchetypeArtifactId=spigot-template -DarchetypeVersion=0.2-SNAPSHOT -DarchetypeRepository=https://oss.sonatype.org/content/repositories/snapshots -DartifactId=sample -Dspigot=/Users/arungupta/tools/spigot 
+mvn --batch-mode archetype:generate -DarchetypeGroupId=org.devoxx4kids.spigot.plugins -DarchetypeArtifactId=spigot-template -DarchetypeVersion=0.2 -DartifactId=sample -Dspigot=/Users/arungupta/tools/spigot 
 ```
 
 Two property value names need to be changed:
@@ -25,15 +33,15 @@ git clone https://github.com/arun-gupta/spigot-archetype.git
 mvn install
 ```
 
-== Maven Central
+== Deploy to Maven Central
 
-=== Deploy Snapshots
+=== Snapshots
 
 ```console
 mvn deploy
 ```
 
-=== Deploy Release
+=== Release
 
 . Set release version: `mvn versions:set -DnewVersion=0.2`
 . `mvn release:prepare -Prelease`
