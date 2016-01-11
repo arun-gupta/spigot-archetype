@@ -4,7 +4,7 @@
   
     <groupId>org.devoxx4kids.spigot.plugins</groupId>
     <artifactId>spigot-template</artifactId>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.2</version>
     <packaging>maven-archetype</packaging>
     <name>Spigot Plugin for Devoxx4Kids Workshops</name>
     <description>Spigot Template Plugin</description>
@@ -28,7 +28,7 @@
         <connection>scm:git:git@github.com:arun-gupta/spigot-archetype.git</connection>
         <developerConnection>scm:git:git@github.com:arun-gupta/spigot-archetype.git</developerConnection>
         <url>https://github.com/arun-gupta/spigot-archetype.git</url>
-        <tag>HEAD</tag>
+        <tag>spigot-template-0.2</tag>
     </scm>
     
     <distributionManagement>
