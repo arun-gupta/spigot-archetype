@@ -2,10 +2,6 @@
 <archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="template"
                       xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-#macro( ccase $str )
-#foreach( $word in $artifactId.split('-') )$word.substring(0,1).toUpperCase()$word.substring(1)#end
-#end
-#set( $className = "#ccase( $artifactId )" )    
     <requiredProperties>
         <requiredProperty key="groupId">
             <defaultValue>org.devoxx4kids.spigot.plugins</defaultValue>
@@ -14,10 +10,12 @@
         <requiredProperty key="version">
             <defaultValue>1.0-SNAPSHOT</defaultValue>
         </requiredProperty>
-        <requiredProperty key="pluginApp">
-            <defaultValue>${artifactId.substring(0,1).toUpperCase()}${artifactId.substring(1).toLowerCase()}</defaultValue>
+        <requiredProperty key="pluginFile">
+            <defaultValue>MyPlugin</defaultValue>
         </requiredProperty>
-        <requiredProperty key="spigot"/>
+        <requiredProperty key="spigot">
+            <defaultValue>/Users/Aditya/Desktop/spigot</defaultValue>
+        </requiredProperty>
     </requiredProperties>
     <fileSets>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
