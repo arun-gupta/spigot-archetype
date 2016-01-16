@@ -6,10 +6,6 @@
     <groupId>${groupId}</groupId>
     <version>${version}</version>
     
-    <properties>
-        <bukkit>/Users/arungupta/tools/spigot</bukkit>
-    </properties>
-
     <!-- Repositories -->
     <repositories>
         <repository>
