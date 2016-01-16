@@ -1,16 +1,12 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-#macro( ccase $str )
-#foreach( $word in $artifactId.split('-') )$word.substring(0,1).toUpperCase()$word.substring(1)#end
-#end
-#set( $className = "#ccase( $artifactId )" )
 package ${package};
 
 import java.util.logging.Level;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class ${className} extends JavaPlugin {
+public class ${pluginFile} extends JavaPlugin {
     // This code is called after the server starts and after the /reload command
     @Override
     public void onEnable() {
